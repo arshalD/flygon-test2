@@ -132,7 +132,7 @@ const Checkout = (props) => {
           console.log(response.razorpay_payment_id);
           orderDetails.paymentId = response.razorpay_payment_id;
           console.log('orderDetails',orderDetails)
-          fetch('http://localhost:3000/api/placeOrder', {
+          fetch('https://magenta-snickerdoodle-4e12b8.netlify.app/api/placeOrder', {
           method: 'POST',
           body: JSON.stringify({
             orderDetails: orderDetails,
