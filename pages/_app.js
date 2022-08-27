@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps,Data}) {
 }
 export default MyApp
 MyApp.getInitialProps = async ({ Component, ctx }) => {
-  const Res = await fetch(`http://localhost:3000/api/getProduct`)
+  const Res = await fetch(`https://magenta-snickerdoodle-4e12b8.netlify.app/api/getProduct`)
   const Data = await Res.json(); 
   let pageProps = {};
   if (Component.getInitialProps) {
