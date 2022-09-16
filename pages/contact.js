@@ -27,7 +27,6 @@ const Contact = (props) => {
     },[])
     return (
         <>
-        <Facebook />
         {width < 736 ?  <div className='mobnavbar-container, drop-shadow' ><MobileNavbar /></div> :<Navbar /> }
         <SearchBar />
         <div className='contacts-container' style={background}>

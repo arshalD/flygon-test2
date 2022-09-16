@@ -26,7 +26,6 @@ const Home = () => {
         <title>Flygon</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <Facebook />
         {width < 736 ?  <div className='mobnavbar-container, drop-shadow' ><MobileNavbar /></div> :<Navbar /> }
         <SearchBar />
         <Lander />
