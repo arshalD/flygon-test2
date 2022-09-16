@@ -31,16 +31,14 @@ const CategoryViewer = (props) => {
         }
       });
     }
-    useEffect(() =>{
-      window.scrollTo(0, 0)
-    })
 
-    // console.log('data from category viewer :',data)
+
+    console.log('data from category viewer :',data)
     // console.log('items from category viewer :',items)
     if (items === null || data.length === 0){
       reRender = setTimeout(() =>{
         forceUpdate();
-       },100)
+       },1000)
 
       return (
           <>
