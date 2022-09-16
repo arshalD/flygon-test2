@@ -2,6 +2,7 @@ import { Layout } from 'antd';
 import { Divider } from 'antd';
 import { useEffect, useState } from 'react';
 import CategorySlider from './Components/CategorySlider'
+import Facebook from './Components/Facebook';
 import FeatureProduct from './Components/FeatureProduct'
 import MobileNavbar from './Components/MobileNavbar';
 import Navbar from './Components/Navbar';
@@ -20,6 +21,7 @@ const SearchResult = (props) => {
 
     return (
         <>
+        <Facebook />
         {width < 736 ?  <div className='mobnavbar-container, drop-shadow' ><MobileNavbar /></div> :<Navbar /> }
         <SearchBar />
         <SearchViewer />  

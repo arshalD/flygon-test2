@@ -10,7 +10,7 @@ import Deals from './Components/Deals';
 import MobileNavbar from './Components/MobileNavbar';
 import Navbar from './Components/Navbar';
 import Head from 'next/head';
-
+import Facebook from './Components/Facebook'
 const {Footer} = Layout;
 
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
         <title>Flygon</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-
+        <Facebook />
         {width < 736 ?  <div className='mobnavbar-container, drop-shadow' ><MobileNavbar /></div> :<Navbar /> }
         <SearchBar />
         <Lander />

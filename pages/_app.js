@@ -8,7 +8,6 @@ import { CardProvider } from '../Context/CardProvider';
 import { SearchProvider } from '../Context/SearchProvider';
 import { useState } from 'react';
 import { CategoryProvider } from '../Context/CategoryProvider';
-import Facebook from './Components/Facebook'
 function MyApp({ Component, pageProps,Data}) {
   const [home, setHome] = useState([])
 
@@ -19,9 +18,7 @@ function MyApp({ Component, pageProps,Data}) {
     <SearchProvider dbData={home}>
     <CartProvider>
     <CardProvider>
-      <Facebook>
        <Component {...pageProps} />
-      </Facebook>
     </CardProvider>
     </CartProvider>
     </SearchProvider>

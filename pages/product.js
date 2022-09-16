@@ -6,6 +6,7 @@ import MobileNavbar from './Components/MobileNavbar';
 import Navbar from './Components/Navbar';
 import SearchBar from './Components/SearchBar'
 import ProductView from './Components/ProductView'
+import Facebook from './Components/Facebook';
 
 const {Footer} = Layout;
 
@@ -19,6 +20,7 @@ const Product = (props) => {
 
     return (
         <>
+        <Facebook/>
         {width < 736 ?  <div className='mobnavbar-container, drop-shadow' ><MobileNavbar /></div> :<Navbar /> }
         <SearchBar />
         <ProductView />  

@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import MobileNavbar from './Components/MobileNavbar';
 import Navbar from './Components/Navbar';
 import { Layout } from 'antd';
+import Facebook from './Components/Facebook'
 
 const {Footer} = Layout;
 
@@ -22,6 +23,7 @@ const Category = (props) => {
     },[])
     return (
         <>
+        <Facebook />
         {width < 736 ?  <div className='mobnavbar-container, drop-shadow' ><MobileNavbar /></div> :<Navbar /> }
         <SearchBar />
         <CategoryViewer  category={category}/>  
