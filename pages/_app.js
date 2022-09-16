@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps,Data}) {
 }
 export default MyApp
 MyApp.getInitialProps = async ({ Component, ctx }) => {
-  const Res = await fetch(`https://magenta-snickerdoodle-4e12b8.netlify.app/api/getProduct`)
+  const Res = await fetch(`https://flygon-test2.vercel.app/api/getProduct`)
   const Data = await Res.json(); 
   let pageProps = {};
   if (Component.getInitialProps) {
