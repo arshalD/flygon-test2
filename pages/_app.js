@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps,Data}) {
 }
 export default MyApp
 MyApp.getInitialProps = async ({ Component, ctx }) => {
-  const Res = await fetch(`https://flygon-test2.vercel.app/api/getProduct`)
+  const Res = await fetch(`https://www.flygon.in/api/getProduct`)
   const Data = await Res.json(); 
   let pageProps = {};
   if (Component.getInitialProps) {

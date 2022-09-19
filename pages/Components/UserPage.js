@@ -16,7 +16,7 @@ const UserPage = (props) =>{
       const router = useRouter();
 
       const datafetch = async(docid)=>{
-        const Res = await fetch(`https://flygon-test2.vercel.app/api/getOrders?id=${docid}`)
+        const Res = await fetch(`https://www.flygon.in/api/getOrders?id=${docid}`)
         const Data = await Res.json();
             if (Object.keys(Data).length === 0) {
               setData(false);
